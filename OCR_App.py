@@ -108,3 +108,28 @@ def keyword_interface(extracted_text, keywords):
     highlighted_text = keyword_search(extracted_text, keywords)
     return highlighted_text
 
+# Function to launch the Gradio interface
+import gradio as gr
+def launch_gradio():
+    with gr.Blocks() as interface:
+        with gr.Row():  
+            with gr.Column(): 
+                image_input = gr.Image(type="pil", label="Upload Image for OCR")
+
+            with gr.Column(): 
+                extracted_text = gr.Textbox(label="Extracted Text", lines=10, interactive=False)
+
+        keywords = gr.Textbox(label="Enter Keywords (comma-separated)", interactive=True)
+        highlighted_text = gr.HTML(label="Highlighted Text")
+
+        extract_btn = gr.Button("Extract Text")
+        extract_btn.click(fn=ocr_interface, inputs=image_input, outputs=[extracted_text, highlighted_text])
+
+        keyword_btn = gr.Button("Search & Highlight Keywords")
+        keyword_btn.click(fn=keyword_interface, inputs=[extracted_text, keywords], outputs=highlighted_text)
+
+    interface.launch()
+
+if __name__ == "__main__":
+    launch_gradio()
+
