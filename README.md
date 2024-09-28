@@ -24,7 +24,7 @@ Install dependencies using the following command:
 pip install -r requirements.txt
 ```
 ## How to run the app
-- Run directly the [Gradio](https://gradio.app/docs) interface
+- Run directly [Gradio]([https://gradio.app/docs](https://huggingface.co/spaces/profchaos/OCR-APP)) app on Huggingface
 - Run on [Google Collab](https://colab.research.google.com/drive/1lNLVl8FzVRrSv4dMd9vXqnz8SYtKoebf?usp=sharing)
 - Run the [Python file](OCR_App.py) locally
 
