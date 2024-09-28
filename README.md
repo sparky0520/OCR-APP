@@ -28,4 +28,7 @@ pip install -r requirements.txt
 - Run on [Google Collab](https://colab.research.google.com/drive/1lNLVl8FzVRrSv4dMd9vXqnz8SYtKoebf?usp=sharing)
 - Run the [Python file](OCR_App.py) locally
 
+## Demo and Screenshots
+-[Demo and Screenshots](https://drive.google.com/drive/folders/1qLSiubYgK4CK2MmI6yuzu2VqTFXzc5wr?usp=drive_link)
+
 
