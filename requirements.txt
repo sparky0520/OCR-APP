@@ -1,5 +1,8 @@
+torch 
+torchvision 
+torchaudio 
+transformers 
+opencv-python 
+Pillow 
+byaldi 
 gradio
-transformers
-Pillow
-torch
-opencv-python
