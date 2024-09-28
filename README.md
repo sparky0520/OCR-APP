@@ -26,6 +26,6 @@ pip install -r requirements.txt
 ## How to run the app
 - Run directly the [Gradio](https://gradio.app/docs) interface
 - Run on [Google Collab](https://colab.research.google.com/drive/1lNLVl8FzVRrSv4dMd9vXqnz8SYtKoebf?usp=sharing)
-- Run the [Python file](ghg.com) locally
+- Run the [Python file](OCR_App.py) locally
 
 
